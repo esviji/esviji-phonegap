@@ -1,8 +1,8 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.esviji.app" version="2.0.5">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.esviji.app" version="2.1.0">
   <name>esviji</name>
   <description>esviji, a free puzzle game on the Web and mobiles</description>
   <author href="http://nicolas-hoizey.com" email="nicolas@hoizey.com">Nicolas Hoizey</author>
-  <content src="index.html"/>
+  <content src="index.html?utm_source=native_app" />
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="default"/>
   <preference name="target-device" value="universal"/>
@@ -19,7 +19,7 @@
   <preference name="android-minSdkVersion" value="14"/>
   <preference name="android-installLocation" value="auto"/>
   <gap:plugin name="org.apache.cordova.inappbrowser"/>
-  <icon src="favicon-194x194.png" width="194" height="194" />
+  <icon src="apple-touch-icon-180x180.png" width="180" height="180" />
   <access origin="*"/>
   <plugin name="cordova-plugin-whitelist" version="1"/>
   <allow-intent href="http://*/*"/>
