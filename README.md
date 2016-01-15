@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This is a project to port [the esviji puzzle game](http://esviji.com) to native apps for iOS and Android.
+This is a project to port [the esviji Web puzzle game](http://esviji.com) to native apps for iOS and Android.
 
 ## Source webapp creation/update
 
