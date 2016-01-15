@@ -1,5 +1,6 @@
 # PhoneGap port of the esviji web game
 
+<span style="float: right; width: 200px; height: auto;">![](https://upload.wikimedia.org/wikipedia/fr/7/74/Logo_phonegap.png)</span>
 ## Introduction
 
 This is a project to port [the esviji puzzle game](http://esviji.com) to native apps for iOS and Android.
