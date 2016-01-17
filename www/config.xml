@@ -39,6 +39,8 @@
 
   <gap:plugin name="org.apache.cordova.inappbrowser"/>
 
+  <icon src="apple-touch-icon.png" />
+
   <!-- iPhone 6 / 6+ -->
   <icon src="apple-touch-icon-180x180.png" platform="ios" width="180" height="180" />
 
@@ -50,14 +52,6 @@
   <icon src="apple-touch-icon-76x76.png" platform="ios" width="76" height="76" />
   <icon src="apple-touch-icon-152x152.png" platform="ios" width="152" height="152" />
 
-  <!-- Settings Icon -->
-  <!-- <icon src="icon-small.png" platform="ios" width="29" height="29" />
-  <icon src="icon-small@2x.png" platform="ios" width="58" height="58" /> -->
-
-  <!-- Spotlight Icon -->
-  <!-- <icon src="icon-40.png" platform="ios" width="40" height="40" />
-  <icon src="icon-40@2x.png" platform="ios" width="80" height="80" /> -->
-  
   <plugin name="cordova-plugin-whitelist" version="1"/>
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
