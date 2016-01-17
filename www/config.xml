@@ -39,7 +39,7 @@
 
   <gap:plugin name="org.apache.cordova.inappbrowser"/>
 
-  <icon src="apple-touch-icon.png" />
+  <icon src="icon.png" />
 
   <!-- iPhone 6 / 6+ -->
   <icon src="apple-touch-icon-180x180.png" platform="ios" width="180" height="180" />
