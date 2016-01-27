@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.esviji.app" version="2.1.4">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.esviji.app" version="2.1.5">
   <name>esviji</name>
   <description>esviji, a free puzzle game on the Web and mobiles</description>
   <author href="http://nicolas-hoizey.com" email="nicolas@hoizey.com">Nicolas Hoizey</author>
@@ -16,6 +16,9 @@
     <preference name="android-installLocation" value="auto"/>
 
     <icon src="icon.png" />
+
+    <!-- Use the Crosswalk WebView (Chromium) instead of the stock browser one -->
+    <plugin name="org.crosswalk.engine" source="pgb" />
   </platform>
 
   <!-- iOS only -->
