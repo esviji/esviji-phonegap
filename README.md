@@ -21,8 +21,10 @@ https://build.phonegap.com/apps/1864078/builds
 
 ### Android
 
-The `.apk` file downloaded from PhoneGap Build is uploaded to [Google Play Developer Console](https://play.google.com/apps/publish/)
+The `.apk` file downloaded from PhoneGap Build is uploaded to [Google Play Developer Console](https://play.google.com/apps/publish/).
 
 ### iOS
 
 The `.ipa` file downloaded from PhoneGap Build is uploaded to [iTunes Connect](https://itunesconnect.apple.com/) with the [Application Loader](https://itunesconnect.apple.com/docs/UsingApplicationLoader.pdf) Mac OS app.
+
+Some of the [app properties are mandatory](https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Appendices/Properties.html#//apple_ref/doc/uid/TP40011225-CH26-SW2) before any publication.
