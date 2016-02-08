@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.esviji.app" version="2.1.10">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.esviji.app" version="2.1.11">
   <name>esviji</name>
   <description>esviji, a free puzzle game on the Web and mobiles</description>
   <author href="http://nicolas-hoizey.com" email="nicolas@hoizey.com">Nicolas Hoizey</author>
@@ -12,10 +12,13 @@
 
   <!-- Android only -->
   <platform name="android">
-    <allow-intent href="market:*" />
+    <preference name="android-build-tool" value="gradle" />
     <preference name="Fullscreen" value="false" />
     <preference name="android-minSdkVersion" value="19" />
-    <preference name="android-installLocation" value="auto"/>
+    <preference name="android-installLocation" value="auto" />
+    <preference name="KeepRunning" value="true" />
+
+    <allow-intent href="market:*" />
 
     <!-- icons -->
     <icon src="android-chrome-36x36.png" platform="android" qualifier="ldpi" />
@@ -31,10 +34,16 @@
 
   <!-- iOS only -->
   <platform name="ios">
+    <preference name="target-device" value="universal" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="detect-data-types" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="exit-on-suspend" value="false" />
+
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
-    <gap:plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay" />
-    <preference name="Fullscreen" value="true" />
+    <plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay" />
 
     <!-- icons -->
     <icon src="icon.png" platform="ios" width="57" height="57" />
@@ -55,17 +64,12 @@
   <preference name="BackgroundColor" value="0xff444444" />
 
   <preference name="permissions" value="none" />
-  <preference name="target-device" value="universal" />
   <preference name="deployment-target" value="8.0" />
   <preference name="SuppressesLongPressGesture" value="true" />
   <preference name="Suppresses3DTouchGesture" value="true" />
 
   <preference name="webviewbounce" value="true" />
-  <preference name="prerendered-icon" value="true" />
   <preference name="stay-in-webview" value="false" />
-  <preference name="ios-statusbarstyle" value="black-opaque" />
-  <preference name="detect-data-types" value="true" />
-  <preference name="exit-on-suspend" value="false" />
   <preference name="show-splash-screen-spinner" value="true" />
   <preference name="auto-hide-splash-screen" value="true" />
   <preference name="disable-cursor" value="false" />
@@ -74,7 +78,8 @@
 
   <plugin name="cordova-plugin-whitelist" source="npm" />
   <access origin="https://fiery-heat-4665.firebaseio.com/" />
-  <access origin="http://*.google-analytics.com" />
-  <access origin="https://*.google-analytics.com" />
-  <access origin="*" /> <!-- Required for iOS9? -->
+
+  <!-- http://stackoverflow.com/a/26581226/717195 -->
+  <access origin="*://*.google-analytics.com/*" subdomains="true" />
+  <!-- <access origin="*" /> <!-- Required for iOS9? -->
 </widget>
