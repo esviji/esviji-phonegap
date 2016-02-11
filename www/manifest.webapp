@@ -1,5 +1,5 @@
 {
-  "version": "2.1.9",
+  "version": "2.1.13",
   "name": "esviji",
   "description": "Play esviji on any device! You'll have to destroy balls based on their colors and place on the board.",
   "launch_path": "/index.html#utm_source=firefox_manifest",
