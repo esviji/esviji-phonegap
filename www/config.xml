@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.esviji.app" version="2.1.10">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.esviji.app" version="2.1.9">
   <name>esviji</name>
   <description>esviji, a free puzzle game on the Web and mobiles</description>
   <author href="http://nicolas-hoizey.com" email="nicolas@hoizey.com">Nicolas Hoizey</author>
@@ -12,7 +12,6 @@
 
   <!-- Android only -->
   <platform name="android">
-    <preference name="android-build-tool" value="gradle" />
     <allow-intent href="market:*" />
     <preference name="Fullscreen" value="false" />
     <preference name="android-minSdkVersion" value="19" />
@@ -71,11 +70,9 @@
   <preference name="auto-hide-splash-screen" value="true" />
   <preference name="disable-cursor" value="false" />
 
-  <plugin name="cordova-plugin-google-analytics" source="npm" />
 
-  <plugin name="cordova-plugin-whitelist" source="npm" />
-  <access origin="https://fiery-heat-4665.firebaseio.com/" />
-  <access origin="http://*.google-analytics.com" />
-  <access origin="https://*.google-analytics.com" />
-  <access origin="*" /> <!-- Required for iOS9? -->
+  <!-- <plugin name="org.apache.cordova.inappbrowser" />
+  <plugin name="cordova-plugin-whitelist" version="1" />
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/> -->
 </widget>
