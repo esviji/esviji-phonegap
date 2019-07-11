@@ -8,7 +8,7 @@ This is a project to port [the esviji Web puzzle game](http://esviji.com) to nat
 
 ## ALL WHAT FOLLOWS IS OBSOLETE!
 
-This part of the project (the PhoneGap port) has been [abandonned February 16th, 2016](https://twitter.com/esviji/status/699565462519042051) to focus on the more future proof Web only version.
+This part of the project (the PhoneGap port) has been [abandoned February 16th, 2016](https://twitter.com/esviji/status/699565462519042051) to focus on the more future proof Web only version.
 
 The code as of this date is still available [in the `phonegap` branch of the esviji project](https://github.com/esviji/esviji/tree/phonegap).
 
